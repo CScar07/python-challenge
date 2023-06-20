@@ -63,7 +63,7 @@ print(f"----------------------------")
 print(f"Winner: {key}")
 print(f"----------------------------")
 
-output_file = Path("analysis")
+output_file = Path("Elections_Results_Summary.txt")
 
 with open(output_file,"w") as file:
 
@@ -76,11 +76,11 @@ with open(output_file,"w") as file:
     file.write("\n")
     file.write(f"----------------------------")
     file.write("\n")
-    file.write(f"Stockham: {Stockham_percent:.3f}% ({khan_votes})")
+    file.write(f"Stockham: {Stockham_percent:.3f}% ({Stockham_votes})")
     file.write("\n")
-    file.write(f"Doane: {Doane_percent:.3f}% ({correy_votes})")
+    file.write(f"Doane: {Doane_percent:.3f}% ({Doane_votes})")
     file.write("\n")
-    file.write(f"DeGette: {DeGette_percent:.3f}% ({li_votes})")
+    file.write(f"DeGette: {DeGette_percent:.3f}% ({DeGette_votes})")
     file.write("\n")
     file.write(f"----------------------------")
     file.write("\n")
